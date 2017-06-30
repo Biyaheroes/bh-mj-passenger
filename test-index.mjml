@@ -1,0 +1,33 @@
+<mjml>
+	<mj-body>
+		<mj-container>
+			<mj-passenger
+				seat-number="999"
+				passenger-name="Jose Protacio y Alonzo Rizal"
+				passenger-type="Regular"
+				passenger-age="27"
+				passenger-gender="Male"
+				ticket-price="Php. 999.50"
+				amount-paid="Php. 999.50"
+				discounted-price="Php 999.50"
+			/>
+			<mj-passenger
+				seat-number="999"
+				passenger-name="Jose Protacio y Alonzo Rizal"
+				passenger-type="Regular"
+				ticket-price="Php 999.50"
+				amount-paid="Php 999.50"
+			/>
+			<mj-passenger
+				seat-number="29"
+				passenger-name="Jose Protacio y Alonzo Rizal"
+				passenger-type="Person with Disability"
+				passenger-id-number="1234567890"
+				passenger-note="I'm carrying 2 large baggages."
+				ticket-price="Php 999.50"
+				amount-paid="Php 999.50"
+				discounted-price="Php 999.50"
+			/>
+		</mj-container>
+	</mj-body>
+</mjml>

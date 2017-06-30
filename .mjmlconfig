@@ -1,0 +1,7 @@
+{
+	"packages": [
+		"./node_modules/bh-mj-small-detail/small-detail.js",
+		"./node_modules/bh-mj-issue/issue.js",
+		"./passenger.js"
+	]
+}

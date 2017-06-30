@@ -1,0 +1,41 @@
+{
+  "name": "bh-mj-passenger",
+  "version": "0.0.0",
+  "description": "Biyaheroes MJML Passenger Component.",
+  "main": "passenger.deploy.js",
+  "support": "passenger.support.js",
+  "authors": [
+    "Biyaheroes Developers <developers@biyaheroes.com>",
+    "Robot Biyaheroes <robot@biyaheroes.com>",
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "biyaheroes",
+    "mjml",
+    "passenger",
+    "component",
+    "bh-mj-passenger"
+  ],
+  "homepage": "https://github.com/Biyaheroes/bh-mj-passenger",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "arkount": "^0.8.0",
+    "bh-mj-issue": "^0.0.0",
+    "bh-mj-small-detail": "^0.2.0",
+    "falzy": "^0.20.0",
+    "jquery": "^3.2.1",
+    "parseon": "^0.8.0",
+    "protype": "^0.22.0",
+    "react": "^15.6.1",
+    "sxty4": "^0.10.0",
+    "truly": "^0.19.0",
+    "wichevr": "^0.10.0"
+  }
+}
