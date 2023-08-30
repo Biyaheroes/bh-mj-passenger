@@ -1,0 +1,24 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - mjml > mjml-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-08-30T14:43:07.540Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          mjml > mjml-cli > chokidar > fsevents > node-pre-gyp > tar-pack >
+          debug
+    - bh-mj-issue > mjml > mjml-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-08-30T14:43:07.540Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          bh-mj-issue > mjml > mjml-cli > chokidar > fsevents > node-pre-gyp >
+          tar-pack > debug
+    - bh-mj-small-detail > mjml > mjml-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2023-08-30T14:43:07.540Z'
+        id: 'npm:debug:20170905'
+        path: >-
+          bh-mj-small-detail > mjml > mjml-cli > chokidar > fsevents >
+          node-pre-gyp > tar-pack > debug
