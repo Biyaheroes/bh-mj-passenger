@@ -10,12 +10,14 @@
     "deploy": "veon set production \"gulp clean && gulp && babel passenger.js --out-file passenger.support.js --source-maps && webpack --progress\"",
     "build": "veon set development \"gulp clean && gulp && babel passenger.js --out-file passenger.support.js --source-maps && webpack --progress\"",
     "test": "veon set test \"gulp && webpack --progress --env.test && npm run render\"",
-	"render": "mjml test-index.mjml --output test-index.html",
+    "render": "mjml test-index.mjml --output test-index.html",
     "watch": "gulp clean && watch \"npm run test\" ./ ./*/ --filter=./.filter.js --wait=5 --interval=5 --ignoreDotFiles",
     "live": "gulp clean && gulp watch",
     "server": "veon set test \"webpack-dev-server --env.test\"",
     "proxy": "browser-sync start --port 3000 --proxy \"localhost:4000\" --index=\"test-index.html\" --files \"test-index.html\" \"test.deploy.js\"",
-    "browser": "browser-sync start --server --port 3000 --index=\"test-index.html\" --files \"test-index.html\" \"test.deploy.js\""
+    "browser": "browser-sync start --server --port 3000 --index=\"test-index.html\" --files \"test-index.html\" \"test.deploy.js\"",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -56,7 +58,8 @@
     "react": "^15.6.1",
     "sxty4": "^0.10.0",
     "truly": "^0.19.0",
-    "wichevr": "^0.10.0"
+    "wichevr": "^0.10.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -89,5 +92,6 @@
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0",
     "yargs": "^8.0.2"
-  }
+  },
+  "snyk": true
 }
